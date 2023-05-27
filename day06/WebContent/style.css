@@ -1,0 +1,24 @@
+@charset "UTF-8";
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+header {
+	display: flex;
+}
+header > div {
+	flex:1;
+	display: flex;
+	align-items: center;
+}
+header > div:last-child {
+	justify-content: flex-end;
+	align-items: center;
+}
+.nick {
+	margin-left: 10px
+}
+.tools > p {
+	margin-right: 10px;
+}
