@@ -1,0 +1,14 @@
+drop table student purge;
+
+create table student (
+    name        varchar2(100),
+    age         number,
+    gender      varchar2(50)
+);
+
+insert into student values ('이지은', 31, '여성');
+insert into student values ('홍진호', 42, '남성');
+insert into student values ('나단비', 5, '여성');
+commit;
+select * from student order by name;
+
