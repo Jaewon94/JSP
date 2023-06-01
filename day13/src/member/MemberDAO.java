@@ -65,9 +65,9 @@ public class MemberDAO {
 		return banner;
 	}
 	
-	private MemberDTO mapping(ResultSet rs) {
+	private MemberDTO mapping(ResultSet rs) throws SQLException {
 		MemberDTO row = new MemberDTO();
-		try {
+	
 			row.setAge(rs.getInt("age"));
 			row.setBirth(rs.getString("birth"));
 			row.setEmail(rs.getString("email"));
@@ -76,9 +76,6 @@ public class MemberDAO {
 			row.setUserId(rs.getString("userid"));
 			row.setUserName(rs.getString("username"));
 			row.setUserPw(rs.getString("userpw"));
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
 		
 		
 		return row;

@@ -22,5 +22,9 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="D:/오후 취업반 김재원/lib/jstl.jar"/>
+	<classpathentry kind="lib" path="D:/오후 취업반 김재원/lib/ojdbc8-23.2.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/오후 취업반 김재원/lib/standard.jar"/>
+	<classpathentry kind="lib" path="D:/오후 취업반 김재원/lib/tomcat-dbcp.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

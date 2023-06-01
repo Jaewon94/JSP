@@ -9,14 +9,19 @@
 <title>ex02-form.jsp</title>
 </head>
 <body>
+
+<c:if test="${not empty login }">
+	<c:redirect url="/ex02-main.jsp"></c:redirect>
+</c:if>
+
 <h1>로그인 폼</h1>
 <hr>
 
 <c:set var="banner" value="${dao.test() }"/>
 <h3>banner : ${banner }</h3>
 <form action="ex02-action.jsp" method="post">
-	<p><input type="text" name="userid" placeholder="ID" autocomplete="off"></p>
-	<p><input type="password" name="userpw" placeholder="PW"></p>
+	<p><input type="text" name="userId" placeholder="ID" autocomplete="off"></p>
+	<p><input type="password" name="userPw" placeholder="PW"></p>
 	<p>
 		<label>
 			<input type="checkbox" name="autologin">
